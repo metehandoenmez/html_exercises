@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      body {
+    font-family: 'calibri';;
+}
+      label {
+        display: block;
+      }
+      input {
+        border-radius: 8px;
+        border-width: 1px;
+        border-color: rgb(191, 102, 243);
+      }
+      textarea {
+        border-radius: 8px;
+        border-width: 1px;
+        border-color: rgb(191, 102, 243);
+      }
+      select {
+        border-radius: 8px;
+        border-width: 1px;
+        border-color: rgb(191, 102, 243);
+      }
+      .content {
+        max-width: 500px;
+        margin: auto;
+      }
+    </style>
+
+  </head>
+
+  <body style="background-color: rgb(255, 244, 252);">
+    <div class="content">
+    <center><h2 style="color:blue";>Registration Form</h2></center>
+    <form>
+      <div style="background-color: rgb(219, 255, 252);">
+      <h4 style="color:blueviolet">Personal Info</h4>
+          <label for="e-mail">E-mail Address:</label>
+              <input type="email" name:"e-mail" autofocus size="25">
+              <p></p>
+          <label for="pwd">Password:</label>
+              <input type="password" name="pwd">
+              <p></p>
+          <label for="name">Name and Lastname:</label>
+              <input type="text" name="name" placeholder="Name" size="10">
+              <input type="text"name="lastname" placeholder="Lastname" size="10">
+              <p></p>
+          <label>Date of Birth:</label>
+              <input type="date">
+              <p></p>
+          <label for="phone">Telephone Number</label>
+              <input type="tel" name="phone">
+              <p></p>
+              <h4 style="color:blueviolet">Plan</h4>
+          <label for="plan">Pick your plan:</label>
+          <select name="plan">
+              <option value="free">Free</option>
+              <option value="plus">Plus (€2/month)</option>
+              <option value="gold">Gold (5€/month)</option>
+              <option value="premium">Premium (10€/month)</option>
+          </select>    
+          <p></p>
+                Benefit more with the whole new <a href="pro_plan_link">Pro plan</a> only for + €10/month!
+              </label>
+          <input type="checkbox" name="pro_plan" value="selected">
+              <label for="cc"></label>
+          <h4 style="color:blueviolet">Payment Info</h4>
+          <label for="cc">Credit Card Number</label>    
+          <input type="tel" name="cc" maxlength="16" placeholder="xxxx-xxxx-xxxx-xxxx">
+          <p></p>
+          <label for="cvc">CVC</label>    
+          <input type="tel" name="cvc" maxlength="3" placeholder="xxx" size="1">
+          <p></p>
+          <label for="expire_month">Expiration Date</label> 
+          <select name='expire_month' id='month'>
+            <option>Month</option>
+            <option value='01'>January</option>
+            <option value='02'>February</option>
+            <option value='03'>March</option>
+            <option value='04'>April</option>
+            <option value='05'>May</option>
+            <option value='06'>June</option>
+            <option value='07'>July</option>
+            <option value='08'>August</option>
+            <option value='09'>September</option>
+            <option value='10'>October</option>
+            <option value='11'>November</option>
+            <option value='12'>December</option>
+        </select>
+        <select name="expire_year" id="year">
+            <option value="23">2023</option>
+            <option value="24">2024</option>
+            <option value="25">2025</option>
+            <option value="26">2026</option>
+            <option value="27">2027</option>
+            <option value="28">2028</option>
+            <option value="29">2029</option>
+        </select>
+    <p></p>
+    <label for="address">Billing Address</label>
+    <textarea name="address" id="address" cols="40" rows="3"></textarea>
+    
+  </div>
+  <p></p>
+          <center><button style="background:#dfafe0;color:rgb(29, 3, 58);border-radius: 50px;">
+            Register</button></center>
+</form>
+</div>
+  </body>
+</html>
